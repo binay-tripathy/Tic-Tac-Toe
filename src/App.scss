@@ -17,20 +17,6 @@
   text-align: center;
 }
 
-.option {
-  width: 100%;
-  margin-bottom: 5px;
-  padding: 5px;
-  background-color: #322e2f;
-  color: #e2d810;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.option:hover {
-  opacity: 0.9;
-}
-
 .theme-switcher {
   position: absolute;
   top: 1rem;
@@ -44,12 +30,3 @@
   font-family: "Maven Pro", sans-serif;
 }
 
-.github-link {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  letter-spacing: 3px;
-  font-family: "Quicksand", sans-serif;
-  font-size: 23px;
-  color: #2b2424;
-}
