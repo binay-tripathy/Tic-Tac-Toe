@@ -30,34 +30,6 @@ class Home extends React.Component {
     }
   };
 
-
-
-  // Later Part : To switch the theme
-
-  // themeSwitcher = () => {
-  //   const boardDOM = document.getElementById("board");
-
-  //   if (boardDOM) {
-  //     if (this.state.theme === "Light") {
-  //       document.body.style.backgroundColor = "#222222";
-  //       boardDOM.style.color = "white";
-  //       for (let i of document.getElementsByClassName("cell")) {
-  //         i.style.border = "1px solid white";
-  //       }
-
-  //       this.setState({ theme: "Dark" });
-  //     } else {
-  //       document.body.style.backgroundColor = "white";
-  //       boardDOM.style.color = "#222222";
-  //       for (let i of document.getElementsByClassName("cell")) {
-  //         i.style.border = "1px solid #333333";
-  //       }
-
-  //       this.setState({ theme: "Light" });
-  //     }
-  //   }
-  // };
-
   closeModal = () => {
     this.setState((prevState) => ({
       isModalVisible: !prevState.isModalVisible,
@@ -76,14 +48,6 @@ class Home extends React.Component {
     if (this.state.showBoard) {
       return (
         <>
-
-          {/* Switching button  */}
-          {/*       <Button className="theme-switcher" onClick={this.themeSwitcher}>
-             Switch to {this.state.theme === "Light" ? "Dark" : "Light"} Theme
-          </Button> */}
-
-
-
           <Game settings={this.settings} />
         </>
       );
